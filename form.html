@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--como emepezar-->
+<html>
+ <head>
+    <title>El primer formulari</title> <!--titulo de la pagina arriba-->
+    <link rel="stylesheet" href="form.css"> <!--Conectar con el css-->
+ </head>
+ <body>
+    <h1>El meu primer formulari</h1> <!--titulo del formulario-->
+    <h5>Les teves dades personales:</h5>
+    <form action="resultat.html"> <!--hace que despues de enviar el formulario rediriga a resultat html-->
+        <label for="fname">Nom:</label> <!--formulario-->
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Cognom:</label>
+        <input type="text" id="lname" name="lname"> <br>
+        <br>
+        <label for="edad">Edat:</label><!--edat numero-->
+        <input type="number" id="edad" name="edad" min="1" max="100">
+        <H5>Marca Els llenguatge de progrmacion que mes t'agrada:</H5>
+        <input type="checkbox" id="html" name="html" value="html">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="CSS" name="CSS" value="CSS">
+        <label for="CSS"> CSS</label><br>
+        <input type="checkbox" id="XML" name="XML" value="XML">
+        <label for="XML">XML</label><br>
+        <h5>Selecciona el cicle formatiu que vols cursar</h5>
+        <p>Selecciona el cicle:</p>
+        <input type="radio" id="ASIX" name="fav_class" value="ASIX">
+        <label for="ASIX">ASIX</label><br>
+        <input type="radio" id="DAM" name="fav_class" value="DAM">
+        <label for="DAM">DAM</label><br>
+        <input type="radio" id="DAW" name="fav_class" value="DAW">
+        <label for="DAW">DAW</label><br>
+        <br>
+        <label for="cars">Selecciona el curs:</label>
+        <select id="cars" name="cars">
+            <option value="Primer">Primer</option>
+            <option value="Segon">Segon</option>
+        </select>
+        <h5>Observaciones:</h5>
+        <textarea name="message" rows="10" cols="30">Escriu el teu missatge.</textarea><!--area de texto para complementar -->
+        <br><br>
+        <input type="submit">
+        
+    </form>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+ </body> 
+ </html>
